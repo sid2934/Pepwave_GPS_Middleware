@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>dotnet-GPS_Reciever-812C936E-46C2-45CD-8A50-71A2C39390D3</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ghostware.NMEAParser" Version="1.0.6" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Systemd" Version="5.0.1" />
+    <PackageReference Include="Mqttnet" Version="3.0.16" />
+    <PackageReference Include="MQTTnet.Extensions.ManagedClient" Version="3.0.16" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <None Include="$(ProjectDir)appsettings.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>
